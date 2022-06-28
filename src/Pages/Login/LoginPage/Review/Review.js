@@ -17,7 +17,7 @@ const Review = () => {
             const description=descriptionRef.current.value;
             const newUser={name:name,description:description}
 
-            fetch('http://localhost:5000/reviews',{
+            fetch('https://safe-earth-59643.herokuapp.com/reviews',{
                 method:'post',
                 headers:{
                     'content-type':'application/json',
@@ -64,7 +64,7 @@ export default Review;
 
 
     // console.log(reviewData)
-        // fetch('http://localhost:5000/reviews',{
+        // fetch('https://safe-earth-59643.herokuapp.com/reviews',{
         //     method:'POST',
         //     headers:{
         //         'content-type':'application/json'

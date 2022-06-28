@@ -16,7 +16,7 @@ const Appointments = () => {
     const [appointments,setAppointments]=useState([])
 
       useEffect(()=>{
-        fetch(`http://localhost:5000/appointments?email=${user.email}`,{
+        fetch(`https://safe-earth-59643.herokuapp.com/appointments?email=${user.email}`,{
             'authorization':'Bearer' 
         })
         .then(res=>res.json())
